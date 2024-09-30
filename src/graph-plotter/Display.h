@@ -13,7 +13,7 @@ enum class Colour
 
 // DO NOT MODIFY THE DISPLAY CLASS!
 // Clients have no knowledge that raylib-cpp is in use
-
+// Presentation Layer: Manages rendering of graphical elements on the screen.
 class Display
 {
 public:

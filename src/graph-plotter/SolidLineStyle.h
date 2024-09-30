@@ -2,7 +2,7 @@
 #define SOLIDLINESTYLE_H
 
 #include "LineStyle.h"
-
+// Presentation Layer: Implements solid line drawing.
 class SolidLineStyle: public LineStyle
 {
 public:

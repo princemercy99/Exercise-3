@@ -1,6 +1,6 @@
 #ifndef SINUSOID_H
 #define SINUSOID_H
-
+// Logic Layer: Represents and evaluates sinusoidal functions.
 class Sinusoid
 {
 public:

@@ -1,6 +1,6 @@
 #ifndef POINTS_H
 #define POINTS_H
-
+// Logic Layer: Represents a point in a 2D coordinate system.
 struct Point
 {
 	float x;
@@ -22,7 +22,7 @@ private:
 	Point _p1;
 	Point _p2;
 };
-
+// Logic Layer: Represents a range of values (start and end) for x-coordinates or function evaluation.
 class Range
 {
 public:

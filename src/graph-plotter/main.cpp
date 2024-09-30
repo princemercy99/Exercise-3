@@ -32,5 +32,9 @@ int main()
 	auto solid_blue = SolidLineStyle{Colour::Blue, display};
 	graph.plot(generateDataPoints(cosine_function, range), solid_blue);
 
+	//The sinusoidal graphs are not smooth because the plotter is generating insufficient data points over the graph's x-range.
+	//Due to this, there are too few points hence the curves look jagged instead of smooth.
+	//To fix this, the number of samples for each period needs to be increased.
+
 	return 0;
 }

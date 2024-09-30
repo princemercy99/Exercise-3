@@ -5,7 +5,7 @@
 #include <memory>
 
 using std::shared_ptr;
-
+// Presentation Layer: Abstract class defining how lines are drawn.
 class LineStyle
 {
 public:

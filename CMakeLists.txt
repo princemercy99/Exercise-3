@@ -69,7 +69,7 @@ file(GLOB LAB_SRC CONFIGURE_DEPENDS ${CMAKE_SOURCE_DIR}/src/graph-plotter/*.cpp)
 set(LAB_EXE "graph-plotter") # name of the executable
 
 if (WIN32)
-    add_executable(${LAB_EXE} WIN32 ${LAB_SRC}) # hides the console window
+    add_executable(${LAB_EXE} ${LAB_SRC}) # hides the console window
 else()
     add_executable(${LAB_EXE} ${LAB_SRC}) # shows the console window
 endif()

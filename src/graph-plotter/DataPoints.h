@@ -8,7 +8,7 @@
 using std::pair;
 using std::make_pair;
 using std::vector;
-
+// Logic Layer: Handles data point transformations and grouping for plotting.
 class DataPoints
 {
 public:

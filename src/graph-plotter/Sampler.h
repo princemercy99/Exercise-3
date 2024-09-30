@@ -3,7 +3,7 @@
 
 #include "DataPoints.h"
 #include "Sinusoid.h"
-
+// Logic Layer: Generates samples of mathematical functions for plotting.
 class Sampler
 {
 public:
@@ -11,7 +11,7 @@ public:
 	DataPoints generateSamples(const Sinusoid &sine_wave, const Range &range) const;
 
 private:
-	static const int TOTAL_POINTS = 50;
+	static const int TOTAL_POINTS = 200; // increase the number of data points generated, hence increase sample size by 4x inital size
 };
 
 // standalone function for generating data points, a default uniform sampler is provided

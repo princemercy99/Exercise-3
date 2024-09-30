@@ -7,7 +7,7 @@
 #include <memory>
 
 using std::shared_ptr;
-
+// Presentation Layer: Manages plotting of data points and visual representation.
 class Graph
 {
 public:
