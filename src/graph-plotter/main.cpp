@@ -3,6 +3,8 @@
 #include "Sampler.h"
 #include "Display.h"
 #include "SolidLineStyle.h"
+#include "DashedLineStyle.h"
+#include "DottedLineStyle.h"
 #include "Points.h"
 #include <memory>
 
@@ -31,6 +33,16 @@ int main()
 
 	auto solid_blue = SolidLineStyle{Colour::Blue, display};
 	graph.plot(generateDataPoints(cosine_function, range), solid_blue);
+
+	//new plots for 3.2
+
+	// Dashed line plot
+    auto dashed_green = DashedLineStyle{Colour::Green, display};
+    graph.plot(generateDataPoints(cosine_function, range), dashed_green);
+
+    // Dotted line plot
+    auto dotted_blue = DottedLineStyle{Colour::Blue, display};
+    graph.plot(generateDataPoints(sine_function, range), dotted_blue);
 
 	//The sinusoidal graphs are not smooth because the plotter is generating insufficient data points over the graph's x-range.
 	//Due to this, there are too few points hence the curves look jagged instead of smooth.

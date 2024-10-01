@@ -11,7 +11,8 @@ void Graph::plot(DataPoints data_points, LineStyle &line_plotter)
 	// and rendering it.
 	drawToBuffer(point_pairs, line_plotter);
 	drawToBuffer(point_pairs, line_plotter);
-
+	drawToBuffer(point_pairs, line_plotter);// another Draw to Buffer stops flickering
+	
 	display_->pause();
 }
 
